@@ -15,6 +15,9 @@ gem 'bootsnap'
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
+gem 'execjs'
+gem 'therubyracer'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', group: :doc
 gem 'rails-controller-testing'
@@ -42,7 +45,7 @@ group :test, :development do
   gem "factory_bot"
   gem "simplecov"
   gem "database_cleaner"
-gem 'sqlite3', '~> 1.3.6'
+  gem 'sqlite3'
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
